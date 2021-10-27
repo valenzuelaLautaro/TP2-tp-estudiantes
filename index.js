@@ -76,6 +76,7 @@ app.get(`${route}/edad/:rango`, (req, res) => {
     } else {
         res.status(409)
         res.send()
+        console.log(`No se encontraron estudiantes en el rango de edad ${req.params.rango}`)
     }
 })
 app.delete(`${route}/:dni`, (req, res) => {
